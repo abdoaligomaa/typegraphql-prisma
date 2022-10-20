@@ -5,7 +5,7 @@ import {ApolloServer} from 'apollo-server'
 // import { PrismaClient } from "@prisma/client";
 import {PrismaClient} from "@prisma/client"
 import {buildSchema} from "type-graphql"
-import { resolvers } from "@generated/type-graphql";
+import { resolvers } from "./prisma/@generated/type-graphql";
 
 const prisma=new PrismaClient({})
 

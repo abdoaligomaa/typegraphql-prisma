@@ -1,0 +1,37 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.OrderMaxAggregate = void 0;
+const tslib_1 = require("tslib");
+const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+let OrderMaxAggregate = class OrderMaxAggregate {
+};
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], OrderMaxAggregate.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Date)
+], OrderMaxAggregate.prototype, "createdAt", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Date)
+], OrderMaxAggregate.prototype, "updatedAt", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Number)
+], OrderMaxAggregate.prototype, "userId", void 0);
+OrderMaxAggregate = tslib_1.__decorate([
+    TypeGraphQL.ObjectType("OrderMaxAggregate", {
+        isAbstract: true
+    })
+], OrderMaxAggregate);
+exports.OrderMaxAggregate = OrderMaxAggregate;
