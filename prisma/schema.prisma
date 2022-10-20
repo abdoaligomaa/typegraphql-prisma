@@ -9,8 +9,11 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
 generator typegraphql {
-  provider = "typegraphql-prisma"
+  provider           = "typegraphql-prisma"
+  // output             = "./@generated/type-graphql"
+  // emitTranspiledCode = true
 }
 
 model Product {
