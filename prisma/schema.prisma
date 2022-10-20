@@ -12,8 +12,8 @@ datasource db {
 
 generator typegraphql {
   provider           = "typegraphql-prisma"
-  // output             = "./@generated/type-graphql"
-  // emitTranspiledCode = true
+  output             = "./@generated/type-graphql"
+  emitTranspiledCode = true
 }
 
 model Product {
